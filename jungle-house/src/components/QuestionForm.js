@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-function handleSubmit(e) {
-    e.preventDefault();
-    alert(e.target['my_input'].value)
-}
+// function handleSubmit(e) {
+//     e.preventDefault();
+//     alert(e.target['my_input'].value)
+// }
 
 function QuestionForm() {
     const [inputValue, setInputValue] = useState('Ask your question here')
