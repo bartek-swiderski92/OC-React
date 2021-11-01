@@ -20,12 +20,3 @@ function PlantItem({ name, cover, id, light, water }) {
 }
 
 export default PlantItem
-
-// {plantList.map((plant) => (
-//   <li key={plant.id} className='jh-plant-item'>
-//     {plant.isBestSale && <span>🔥</span>}
-//     {plant.name}
-//     <CareScale careType='water' scaleValue={plant.water} />
-//     <CareScale careType='light' scaleValue={plant.light} />
-//   </li>
-// ))}
