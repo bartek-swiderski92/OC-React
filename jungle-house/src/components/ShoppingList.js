@@ -2,7 +2,7 @@ import { plantList } from '../datas/plantList'
 import PlantItem from './PlantItem'
 import '../styles/ShoppingList.css'
 
-function ShoppingList() {
+function ShoppingList({ cart, updateCart }) {
 	const categories = plantList.reduce(
 		(acc, plant) =>
 			acc.includes(plant.category) ? acc : acc.concat(plant.category),
@@ -18,13 +18,15 @@ function ShoppingList() {
 			</ul>
 			<ul className='jh-plant-list'>
 				{plantList.map(({ id, cover, name, water, light }) => (
-					<PlantItem
-						key={id}
-						cover={cover}
-						name={name}
-						water={water}
-						light={light}
-					/>
+					<div key={id}>
+						<PlantItem
+							cover={cover}
+							name={name}
+							water={water}
+							light={light}
+						/>
+						<button onClick={() => updateCart(cart + 1)}>Add</button>
+					</div>
 				))}
 			</ul>
 		</div>
