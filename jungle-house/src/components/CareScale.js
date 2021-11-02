@@ -1,14 +1,13 @@
 import Sun from '../assets/sun.svg'
 import Water from '../assets/water.svg'
 
-function handleClick() {
-	console.log('click')
-}
-
+// Here, is a way of doing it.
+// You could also have used a function that returns the desired element,
+// or enter conditions directly
 const quantityLabel = {
 	1: 'little',
 	2: 'moderate',
-	3: 'much',
+	3: 'much'
 }
 
 function CareScale({ scaleValue, careType }) {
@@ -21,7 +20,15 @@ function CareScale({ scaleValue, careType }) {
 		)
 
 	return (
-		<div onClick={() => alert(`This plant requires ${quantityLabel[scaleValue]} ${careType === 'light' ? 'light' : 'watering'}`)}>
+		<div
+			onClick={() =>
+				alert(
+					`This plant requires ${quantityLabel[scaleValue]} ${
+						careType === 'light' ? 'light' : "watering"
+					}`
+				)
+			}
+		>
 			{range.map((rangeElem) =>
 				scaleValue >= rangeElem ? (
 					<span key={rangeElem.toString()}>{scaleType}</span>

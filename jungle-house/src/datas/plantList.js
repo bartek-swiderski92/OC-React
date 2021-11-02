@@ -1,4 +1,12 @@
 import monstera from '../assets/monstera.jpg'
+import lyrata from '../assets/lyrata.jpg'
+import pothos from '../assets/pothos.jpg'
+import succulent from '../assets/succulent.jpg'
+import olive from '../assets/olive.jpg'
+import basil from '../assets/basil.jpg'
+import mint from '../assets/mint.jpg'
+import calathea from '../assets/calathea.jpg'
+import cactus from '../assets/cactus.jpg'
 
 export const plantList = [
 	{
@@ -15,23 +23,24 @@ export const plantList = [
 		id: '2ab',
 		light: 3,
 		water: 1,
-		cover: monstera
+		cover: lyrata
 	},
+
 	{
 		name: 'silver pothos',
 		category: 'classic',
 		id: '3sd',
 		light: 1,
 		water: 2,
-		cover: monstera
+		cover: pothos
 	},
 	{
-		name: 'yucca',
+		name: 'calathea',
 		category: 'classic',
 		id: '4kk',
-		light: 3,
-		water: 1,
-		cover: monstera
+		light: 2,
+		water: 3,
+		cover: calathea
 	},
 	{
 		name: 'olive tree',
@@ -39,15 +48,16 @@ export const plantList = [
 		id: '5pl',
 		light: 3,
 		water: 1,
-		cover: monstera
+		cover: olive
 	},
+
 	{
-		name: 'geranium',
-		category: 'exterior',
-		id: '6uo',
+		name: 'cactus',
+		category: 'succulent',
+		id: '8fp',
 		light: 2,
-		water: 2,
-		cover: monstera
+		water: 1,
+		cover: cactus
 	},
 	{
 		name: 'basil',
@@ -55,15 +65,7 @@ export const plantList = [
 		id: '7ie',
 		light: 2,
 		water: 3,
-		cover: monstera
-	},
-	{
-		name: 'aloe',
-		category: 'succulent',
-		id: '8fp',
-		light: 2,
-		water: 1,
-		cover: monstera
+		cover: basil
 	},
 	{
 		name: 'succulent',
@@ -71,6 +73,15 @@ export const plantList = [
 		id: '9vn',
 		light: 2,
 		water: 1,
-		cover: monstera
+		cover: succulent
+	},
+
+	{
+		name: 'mint',
+		category: 'exterior',
+		id: '6uo',
+		light: 2,
+		water: 2,
+		cover: mint
 	}
 ]
