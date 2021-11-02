@@ -15,9 +15,12 @@ function Cart() {
 				Close
 			</button>
 			<h2>Cart</h2>
-			<div>Monstera : {monsteraPrice}€</div>
+			<ul>
+				
+			</ul>
 			<button onClick={() => updateCart(cart + 1)}>Add</button>
 			<h3>Total : {monsteraPrice * cart}€</h3>
+			<button onClick={() => updateCart(0)}>Clear Cart</button>
 		</div>
 	) : (
 		<div className='jh-cart-closed'>
